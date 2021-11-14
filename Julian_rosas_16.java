@@ -31,6 +31,7 @@ public class Julian_rosas_16 {
         b.agregar(libro1);
         b.agregar(rev1);
         b.prestar(pres1);
+        b.agregarcliente(c1);
 
         System.out.println("cantidad de prestamos : " + b.cantidadprestamos());
 
@@ -51,7 +52,7 @@ public class Julian_rosas_16 {
         System.out.println("listado de barrios de los clientes : ");
         b1.listadodebarrios();
 
-
+        new bibliotecaventana(b).setVisible(true);
     }
 
 }
