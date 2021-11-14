@@ -1,8 +1,3 @@
-package julian_rosas_16;
-
-/**
- * @author Julian Rosas
- */
 public class Julian_rosas_16 {
 
 

@@ -1,8 +1,3 @@
-package julian_rosas_16;
-
-/**
- * @author Julian Rosas
- */
 public class provincia {
 
     private final String nombre;
