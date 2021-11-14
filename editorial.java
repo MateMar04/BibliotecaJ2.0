@@ -6,7 +6,6 @@
 package julian_rosas_16;
 
 /**
- *
  * @author Julian Rosas
  */
 public class editorial {
@@ -14,7 +13,7 @@ public class editorial {
     private final String nombre;
 
     public editorial(String nombre) {
-        this.nombre=nombre;
+        this.nombre = nombre;
     }
-    
+
 }

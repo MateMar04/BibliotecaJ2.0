@@ -6,20 +6,14 @@
 package julian_rosas_16;
 
 /**
- *
  * @author Julian Rosas
  */
 public class revista extends publicacion {
 
-   
 
     public revista(String titulo) {
         super(titulo);
     }
 
-   
 
-   
-
-   
 }

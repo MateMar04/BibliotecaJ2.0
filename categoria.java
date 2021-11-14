@@ -6,7 +6,6 @@
 package julian_rosas_16;
 
 /**
- *
  * @author Julian Rosas
  */
 public class categoria {
@@ -14,13 +13,13 @@ public class categoria {
     private final String nombre;
 
     categoria(String nombre) {
-        this.nombre=nombre;
+        this.nombre = nombre;
     }
 
     @Override
     public String toString() {
         return "categoria{" + "nombre=" + nombre + '}';
     }
-    
+
 
 }

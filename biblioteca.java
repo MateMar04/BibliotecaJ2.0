@@ -8,22 +8,19 @@ package julian_rosas_16;
 import java.util.ArrayList;
 
 /**
- *
  * @author Julian Rosas
  */
 public class biblioteca {
 
     private final String nombre;
-    private ArrayList <publicacion> listadepublicacion ;
-    private ArrayList <prestamo> listadeprestamos ;
-    
-    
-    
-    
+    private final ArrayList<publicacion> listadepublicacion;
+    private final ArrayList<prestamo> listadeprestamos;
+
+
     biblioteca(String nombre) {
-        this.nombre=nombre;
+        this.nombre = nombre;
         listadepublicacion = new ArrayList();
-        listadeprestamos=new ArrayList();
+        listadeprestamos = new ArrayList();
     }
 
     void agregar(publicacion pub) {
@@ -37,37 +34,34 @@ public class biblioteca {
     int cantidadprestamos() {
         return listadeprestamos.size();
     }
-    
+
     int cantidadpublicaciones() {
         return listadepublicacion.size();
     }
 
     void listarpublicacionycantprestamos() {
-        for (publicacion pub :listadepublicacion){
+        for (publicacion pub : listadepublicacion) {
             System.out.println(pub);
         }
     }
 
     void listarclientesconprestamos() {
-        for(prestamo p : listadeprestamos ){
+        for (prestamo p : listadeprestamos) {
             System.out.println(p.getcliente());
         }
     }
 
     void listadepublicaciones() {
-        for(publicacion pub : listadepublicacion ){
+        for (publicacion pub : listadepublicacion) {
             System.out.println(pub.getpublicaciones());
         }
     }
 
     void listadeprestamos() {
-        for(prestamo p : listadeprestamos ){
+        for (prestamo p : listadeprestamos) {
             System.out.println(p.getprestamos());
         }
     }
 
-  
 
-    
-   
 }

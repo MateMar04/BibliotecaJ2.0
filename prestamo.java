@@ -8,7 +8,6 @@ package julian_rosas_16;
 import java.util.ArrayList;
 
 /**
- *
  * @author Julian Rosas
  */
 public class prestamo {
@@ -17,13 +16,13 @@ public class prestamo {
     private final String fechadev;
     private final cliente cliente;
     ArrayList<publicacion> lista;
-    
+
 
     public prestamo(String fechapres, String fechadev, cliente c1) {
-        this.fechapres=fechapres;
-        this.fechadev=fechadev;
-        this.cliente=c1;
-        lista=new ArrayList();
+        this.fechapres = fechapres;
+        this.fechadev = fechadev;
+        this.cliente = c1;
+        lista = new ArrayList();
     }
 
     void agregar(publicacion pub) {
@@ -38,7 +37,6 @@ public class prestamo {
     ArrayList<publicacion> getprestamos() {
         return lista;
     }
-    
-    
-    
+
+
 }

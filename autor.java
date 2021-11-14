@@ -6,7 +6,6 @@
 package julian_rosas_16;
 
 /**
- *
  * @author Julian Rosas
  */
 public class autor {
@@ -14,7 +13,7 @@ public class autor {
     private final String nombre;
 
     public autor(String nombre) {
-        this.nombre=nombre;
+        this.nombre = nombre;
     }
-    
+
 }

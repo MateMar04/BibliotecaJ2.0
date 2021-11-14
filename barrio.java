@@ -6,17 +6,16 @@
 package julian_rosas_16;
 
 /**
- *
  * @author Julian Rosas
  */
 public class barrio {
-    
-    private String nombre;
-    private localidad localidad;
-    
+
+    private final String nombre;
+    private final localidad localidad;
+
     barrio(String nombre, localidad localidad) {
-        this.nombre=nombre;
-        this.localidad=localidad;
+        this.nombre = nombre;
+        this.localidad = localidad;
     }
 
     @Override
@@ -28,7 +27,5 @@ public class barrio {
         System.out.println(nombre);
     }
 
-    
-    
-    
+
 }

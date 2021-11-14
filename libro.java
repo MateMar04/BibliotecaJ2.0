@@ -6,21 +6,16 @@
 package julian_rosas_16;
 
 
-
 /**
- *
  * @author Julian Rosas
  */
-public class libro extends publicacion{
-    
-    
+public class libro extends publicacion {
+
 
     public libro(String nombre) {
         super(nombre);
-        
+
     }
 
-   
 
-    
 }
