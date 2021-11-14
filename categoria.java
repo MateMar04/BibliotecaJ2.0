@@ -8,7 +8,7 @@ public class categoria {
 
     @Override
     public String toString() {
-        return "categoria{" + "nombre=" + nombre + '}';
+        return nombre;
     }
 
 

@@ -6,8 +6,6 @@ public class biblioteca {
     private final ArrayList<publicacion> listadepublicacion;
     private final ArrayList<prestamo> listadeprestamos;
     private final ArrayList<cliente> listadeclientes;
-    private final ArrayList<libro> listadelibros;
-    private final ArrayList<revista> listaderevistas;
 
 
     biblioteca(String nombre) {
@@ -15,8 +13,6 @@ public class biblioteca {
         listadepublicacion = new ArrayList();
         listadeprestamos = new ArrayList();
         listadeclientes = new ArrayList();
-        listadelibros = new ArrayList();
-        listaderevistas = new ArrayList();
     }
 
     void agregar(publicacion pub) {
@@ -85,6 +81,26 @@ public class biblioteca {
 
     public int cantidadclientes() {
         return listadeclientes.size();
+    }
+
+    public ArrayList<libro> getlibros() {
+        ArrayList<libro> libros = new ArrayList<>();
+        for (publicacion p : listadepublicacion) {
+            if (p instanceof libro) {
+                libros.add((libro) p);
+            }
+        }
+        return libros;
+    }
+
+    public ArrayList<revista> getrevistas() {
+        ArrayList<revista> revistas = new ArrayList<>();
+        for (publicacion p : listadepublicacion) {
+            if (p instanceof revista) {
+                revistas.add((revista) p);
+            }
+        }
+        return revistas;
     }
 
 

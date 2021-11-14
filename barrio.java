@@ -10,7 +10,7 @@ public class barrio {
 
     @Override
     public String toString() {
-        return "barrio{" + "nombre=" + nombre + ", localidad=" + localidad + '}';
+        return nombre + ", " + localidad;
     }
 
     void listadodebarrios() {

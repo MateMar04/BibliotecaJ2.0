@@ -12,7 +12,7 @@ public class direccion {
 
     @Override
     public String toString() {
-        return "direccion{" + "calle= " + calle + ", numero= " + numero + ", barrio= " + barrio + '}';
+        return calle + " " + numero + ", " + barrio;
     }
 
 

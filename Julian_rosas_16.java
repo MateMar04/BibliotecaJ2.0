@@ -15,14 +15,17 @@ public class Julian_rosas_16 {
         cliente c1 = new cliente("Juan perez", "12457567", "juanpere@gmail.com", d1);
 
         autor a1 = new autor("JK Rowling");
+        autor a2 = new autor("Forms");
 
         categoria cat1 = new categoria("fantasia");
+        categoria cat2 = new categoria("economia");
 
         editorial ed1 = new editorial("La salamandra");
+        editorial ed2 = new editorial("Forms");
 
-        publicacion libro1 = new libro("Harry Potter");
+        publicacion libro1 = new libro("Harry Potter", a1, ed1, cat1);
 
-        publicacion rev1 = new revista("Forms");
+        publicacion rev1 = new revista("Forms", a2, ed2, cat2);
 
         prestamo pres1 = new prestamo("12/08/21", "14/08/21", c1);
         pres1.agregar(libro1);

@@ -6,4 +6,12 @@ public class autor {
         this.nombre = nombre;
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    @Override
+    public String toString() {
+        return nombre;
+    }
 }
