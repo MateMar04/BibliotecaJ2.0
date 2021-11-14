@@ -4,7 +4,7 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.Vector;
 
-public class librosventana extends javax.swing.JFrame{
+public class librosventana extends javax.swing.JFrame {
     private JPanel panel1;
     private JComboBox comboBoxLibros;
     private JLabel autorInfo;

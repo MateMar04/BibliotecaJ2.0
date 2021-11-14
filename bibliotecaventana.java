@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-public class bibliotecaventana extends javax.swing.JFrame{
+public class bibliotecaventana extends javax.swing.JFrame {
     private JPanel panel1;
     private JButton verLibrosButton;
     private JButton verClientesButton;
@@ -15,6 +15,7 @@ public class bibliotecaventana extends javax.swing.JFrame{
     public bibliotecaventana(biblioteca biblioteca) {
         add(panel1);
         setSize(500, 500);
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         cantLibros.setText(String.valueOf(biblioteca.cantidadlibros()));
         cantRevistas.setText(String.valueOf(biblioteca.cantidadrevistas()));
