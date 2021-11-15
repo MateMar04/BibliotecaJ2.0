@@ -40,9 +40,9 @@ public class clientesventana extends javax.swing.JFrame {
                 ArrayList<prestamo> prestamos = biblioteca.listadeprestamos();
                 Vector comboboxitems = new Vector();
 
-                for(int i = 0; i < prestamos.size(); i++){
+                for (int i = 0; i < prestamos.size(); i++) {
                     ArrayList<publicacion> publicaciones = prestamos.get(i).getprestamos();
-                    if(prestamos.get(i).getCliente() == cliente){
+                    if (prestamos.get(i).getCliente() == cliente) {
                         for (int j = 0; j < publicaciones.size(); j++) {
                             comboboxitems.add(publicaciones.get(j).getTitulo());
                         }
