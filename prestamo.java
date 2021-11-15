@@ -20,8 +20,12 @@ public class prestamo {
         pub.incrementarcantprestamos();
     }
 
-    cliente getcliente() {
+    public cliente getCliente() {
         return cliente;
+    }
+
+    public ArrayList<publicacion> getLista() {
+        return lista;
     }
 
     ArrayList<publicacion> getprestamos() {

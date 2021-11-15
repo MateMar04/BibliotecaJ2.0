@@ -43,7 +43,7 @@ public class biblioteca {
 
     void listarclientesconprestamos() {
         for (prestamo p : listadeprestamos) {
-            System.out.println(p.getcliente());
+            System.out.println(p.getCliente());
         }
     }
 
@@ -53,10 +53,8 @@ public class biblioteca {
         }
     }
 
-    void listadeprestamos() {
-        for (prestamo p : listadeprestamos) {
-            System.out.println(p.getprestamos());
-        }
+    ArrayList<prestamo> listadeprestamos() {
+        return listadeprestamos;
     }
 
     public int cantidadlibros() {
@@ -101,6 +99,10 @@ public class biblioteca {
             }
         }
         return revistas;
+    }
+
+    public ArrayList<cliente> getclientes() {
+        return listadeclientes;
     }
 
 

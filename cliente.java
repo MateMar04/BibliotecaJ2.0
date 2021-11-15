@@ -13,6 +13,22 @@ public class cliente {
         this.direccion = d1;
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public String getMail() {
+        return mail;
+    }
+
+    public direccion getDireccion() {
+        return direccion;
+    }
+
     @Override
     public String toString() {
         return "cliente{" + "nombre=" + nombre + ", telefono=" + telefono + ", mail=" + mail + ", direccion= " + direccion + '}';
